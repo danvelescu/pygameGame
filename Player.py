@@ -1,6 +1,6 @@
 import pygame
 
-from Screen import Screen
+from Screen import ScreenResolution
 
 
 class Player:
@@ -23,6 +23,6 @@ class Player:
             self.position_y += 1
 
     def track_positon(self):
-        if self.position_y > Screen.screen_width:
-            self.position_y = Screen.screen_width / 2
+        if self.position_y > ScreenResolution.screen_width:
+            self.position_y = ScreenResolution.screen_width / 2
 
